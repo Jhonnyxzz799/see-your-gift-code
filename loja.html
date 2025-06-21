@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Loja</title></head>
+<body>
+  <h2>Gift Cards Disponíveis</h2>
+  {% for p in produtos %}
+    <div>
+      <strong>{{ p.nome }}</strong> — R$ {{ p.preco }} <a href="/comprar/{{ p.id }}">Comprar</a>
+    </div>
+  {% endfor %}
+</body>
+</html>
